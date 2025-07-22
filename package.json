@@ -1,0 +1,73 @@
+{
+  "name": "mazehub",
+  "version": "0.0.1",
+  "description": "MazeMap API + React.js",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marthvon/mazehub.git"
+  },
+  "scripts": {
+    "build": "find types -type f ! -name 'global.d.ts' -delete && npx tsc && ./min.sh dist && ./nexify.sh dist"
+  },
+  "keywords": [
+    "Mazemap",
+    "Map",
+    "React",
+    "Component",
+    "Floor Level Map"
+  ],
+  "exports": {
+    "./mazemap_package": {
+      "import": "./dist/mazemap_package.js",
+      "types": "./types/mazemap_package.d.ts"
+    },
+    "./mazemap": {
+      "import": "./dist/mazemap.js",
+      "types": "./types/mazemap.d.ts"
+    },
+    "./map_consumer": {
+      "import": "./dist/map_consumer.js",
+      "types": "./types/map_consumer.d.ts"
+    },
+    "./mazemap_api": {
+      "import": "./dist/mazemap_api.js",
+      "types": "./types/mazemap_api.d.ts"
+    },
+    "./gps_navigation": {
+      "import": "./dist/gps_navigation.js",
+      "types": "./types/gps_navigation.d.ts"
+    },
+    "./marker_provider": {
+      "import": "./dist/marker_provider.js",
+      "types": "./types/marker_provider.d.ts"
+    }
+  },
+  "types": "./types",
+  "author": "marthvon",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist/",
+    "types/"
+  ],
+  "devDependencies": {
+    "@types/node": "^24.0.1",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@types/supercluster": "^7.1.3"
+  },
+  "dependencies": {
+    "supercluster": "^8.0.1"
+  },
+  "overrides": {
+    "@types/scheduler": "< 0.23.0"
+  }
+}

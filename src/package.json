@@ -1,0 +1,27 @@
+{
+  "name": "mazehub",
+  "version": "0.0.1",
+  "description": "MazeMap API + React.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "MazeMap",
+    "React",
+    "Component",
+    "Map"
+  ],
+  "author": "marthvon",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "@marthvon/frontail": ">=0.5.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.15",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6"
+  }
+}
