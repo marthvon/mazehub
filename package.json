@@ -41,9 +41,14 @@
     "./marker_provider": {
       "import": "./dist/marker_provider.js",
       "types": "./types/marker_provider.d.ts"
+    },
+    "./cluster_marker_provider": {
+      "import": "./dist/cluster_marker_provider.js",
+      "types": "./types/cluster_marker_provider.d.ts"
     }
   },
   "types": "./types",
+  "typesVersions": { "*": { "*": ["./types/*"] } },
   "author": "marthvon",
   "license": "MIT",
   "peerDependencies": {

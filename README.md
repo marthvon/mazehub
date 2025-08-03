@@ -63,6 +63,12 @@ w-full h-full z-10 overflow-visible
 </Suspense>
 ```
 
+## Map Modules
+
+1. <MarkerProvider ... /> Module
+1. <ClusterMarkerProvider ... /> Module
+1. <GpsNavigation ... /> Module
+
 ## How to Write You're own Map Module
 
 ```tsx
@@ -144,5 +150,4 @@ type RouterConfig = {
 
 # Future Updates
 
-1. Clustering Marker Provider Module
-2. Dungeon Controlling Modules (WASD & Virtual Joystick for Mobile)
+1. Dungeon Controlling Modules (WASD & Virtual Joystick for Mobile)

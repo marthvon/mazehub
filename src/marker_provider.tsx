@@ -125,7 +125,7 @@ export default function MarkerProviderFactory(factory: MarkerFactory, comparison
       batchQueue.current.length = 0;
       prevMarkersData.current.length = 0;
       prevMarkerInst.current.length = 1;
-      for(const marker of Object.values(prevMarkerInst.current))
+      for(const marker of Object.values(prevMarkerInst.current[0]))
         marker.remove();
       prevMarkerInst.current.length = 0;
     }, []);

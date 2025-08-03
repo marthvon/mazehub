@@ -40,5 +40,5 @@ export type MapRefAPI = {
     props?: { bearing?: { value: number, accuracy: number }, color?: string}
   ) => BlueDot|Promise<BlueDot>,
   highlightPoi: (poi: PoiData | LocationType, config?: Partial<HighlighterConfig>) => PoiData | Promise<PoiData>,
-  clearHighlight: () => void|Promise<void>
+  clearHighlight: () => void|Promise<void>,
 };

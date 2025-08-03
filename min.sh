@@ -26,11 +26,6 @@ done
 
 echo "✅ All .js files minified in $DIR"
 
-#,
-#"./cluster_marker_provider": {
-#  "import": "./dist/cluster_marker_provider.js",
-#  "types": "./types/cluster_marker_provider.d.ts"
-#},
 #"./dungeon_crawling": {
 #  "import": "./dist/dungeon_crawling.js",
 #  "types": "./types/dungeon_crawling.d.ts"
