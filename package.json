@@ -1,5 +1,5 @@
 {
-  "name": "mazehub",
+  "name": "@marthvon/mazehub",
   "version": "0.0.1",
   "description": "MazeMap API + React.js",
   "type": "module",

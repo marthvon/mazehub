@@ -3,3 +3,5 @@ package-lock.json
 node_modules
 types/*
 !types/global.d.ts
+min.sh
+nexify.sh
