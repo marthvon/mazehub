@@ -7,17 +7,14 @@
     "moduleResolution": "node",
     "jsx": "react-jsx",
     "declaration": true,
-    "declarationMap": true,
-    "emitDeclarationOnly": true,
+    "emitDeclarationOnly": false,
     "removeComments": true,
     "noEmitHelpers": true,
     "outDir": "./dist",
     "rootDir": "./src",
     "declarationDir": "./types",
     "esModuleInterop": true,
-    "composite": true,
     "strict": true,
-    "stripInternal": true
   },
   "include": [
     "src",

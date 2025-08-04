@@ -9,7 +9,7 @@ if [ -z "$DIR" ]; then
   exit 1
 fi
 
-if ! command -v terser &> /dev/null; then
+if ! command -v terser >/dev/null 2>&1; then
   echo "Error: 'terser' is not installed. Run 'npm install -g terser'"
   exit 1
 fi
@@ -20,13 +20,7 @@ find "$DIR" -type f -name "*.js" | while read -r file; do
     --compress directives=true \
     --mangle \
     --ecma 2020 \
-    --output "$file.tmp" \
-    && mv "$file.tmp" "$file"
+    --output "$file.tmp" && mv "$file.tmp" "$file"
 done
 
 echo "✅ All .js files minified in $DIR"
-
-#"./dungeon_crawling": {
-#  "import": "./dist/dungeon_crawling.js",
-#  "types": "./types/dungeon_crawling.d.ts"
-#}

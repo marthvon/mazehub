@@ -1,6 +1,6 @@
 {
   "name": "@marthvon/mazehub",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "description": "MazeMap API + React.js",
   "type": "module",
   "repository": {
@@ -8,7 +8,7 @@
     "url": "https://github.com/marthvon/mazehub.git"
   },
   "scripts": {
-    "build": "find types -type f ! -name 'global.d.ts' -delete && npx tsc && ./min.sh dist && ./nexify.sh dist"
+    "build": "find types -type f ! -name 'global.d.ts' -delete && npx tsc && bash ./min.sh dist && bash ./nexify.sh dist"
   },
   "keywords": [
     "Mazemap",
